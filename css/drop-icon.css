@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'drop-icon';
+  src: url('./font/drop-icon.eot?22851144');
+  src: url('./font/drop-icon.eot?22851144#iefix') format('embedded-opentype'),
+       url('./font/drop-icon.woff?22851144') format('woff'),
+       url('./font/drop-icon.ttf?22851144') format('truetype'),
+       url('./font/drop-icon.svg?22851144#drop-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'drop-icon';
+    src: url('../font/drop-icon.svg?22851144#drop-icon') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "drop-icon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-angle-down:before { content: '\e800'; } /* '' */
+.icon-angle-up:before { content: '\e801'; } /* '' */
+.icon-angle-left:before { content: '\e802'; } /* '' */
+.icon-angle-right:before { content: '\e803'; } /* '' */
+.icon-angle-double-up:before { content: '\e804'; } /* '' */
+.icon-angle-double-down:before { content: '\e805'; } /* '' */
+.icon-sort-name-down:before { content: '\e806'; } /* '' */
+.icon-sort-name-up:before { content: '\e807'; } /* '' */
+.icon-sort-number-up:before { content: '\e808'; } /* '' */
+.icon-sort-number-down:before { content: '\e809'; } /* '' */
+.icon-comment-alt:before { content: '\e80a'; } /* '' */
+.icon-home:before { content: '\e80b'; } /* '' */
+.icon-comment:before { content: '\e80c'; } /* '' */
+.icon-emo-happy:before { content: '\e80d'; } /* '' */

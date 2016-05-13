@@ -1,0 +1,132 @@
+body{
+    line-height: 1.5;
+}
+.needing_left{
+    position: relative;
+    width: 230px;
+    /*height: 100%;*/
+    border: 1px solid #DDD;
+    padding: 20px;
+    /*margin-top: 10px;*/
+    float: left;
+    /*margin-left: -1398px ;*/
+    background: #EEE;
+    min-height: 600px;
+}
+.user_info{
+    padding: 20px;
+}
+.main{
+    /*width: 100%;*/
+    float: left;
+    /*margin-left: 230px;*/
+}
+.user_min_image{
+    height: 60px;
+}
+.user_name{
+    font-size: 14px;
+    font-weight: bold;
+}
+.user_min_image dt{
+    float: left;
+}
+dd{
+    /*margin-left: 10px;*/
+}
+body{
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    background: #FFFFFF;
+}
+.account_info a{
+    color:#777;
+}
+.user_menu{
+
+}
+.title-sum{
+    background: transparent url(./images/bgs.png) 11% 8px no-repeat;
+    font-size: 14px;
+    padding: 3px 0 0 40px;
+    font-weight: bold;
+    color: #034f9b;
+    cursor: pointer;
+}
+.on{
+    background-position: 11% -33px;
+}
+.title-detail{
+    display: none;
+    font-size: 12px;
+    font-family: "Arial", "Microsoft YaHei", "宋体", sans-serif;
+}
+.title-detail dt{
+    cursor: pointer;
+    padding-left: 40px;
+}
+.title-detail a{
+    color: black;
+}
+.main-left{
+    overflow: hidden;
+    width: 485px;
+    float: left;
+}
+.deal-empty{
+    display: block;
+    margin-top: 10px;
+}
+.deal-inner{
+    text-align: center;
+}
+.ui-btn {
+    padding: 12px 40px;
+    display: inline-block;
+    /*padding: 4px 12px;*/
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #ededed;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.ui-btn-sm {
+    padding: 4px 12px;
+    display: inline-block;
+    /*padding: 4px 12px;*/
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #ededed;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.money td{
+    padding: 5px 10px;
+    /*width: 100px;*/
+    width: 33%;
+    border-right: 1px solid #cadaea;
+}
+.title-detail dt{
+    line-height: 20px;
+}

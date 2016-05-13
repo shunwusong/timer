@@ -1,0 +1,30 @@
+.btn-sm{
+    padding: 0 4px;
+    display: inline-block;
+    /*padding: 4px 12px;*/
+    margin-bottom: 0;
+    /*font-size: 14px;*/
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #ededed;
+    /*border: 1px solid #d2d2d2;*/
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    /*background-color: #ff9400;*/
+    border-color: #ea7f00;
+    font-size: 12px
+}
+.choose{
+    background-color: #ff9400;
+}
+.no-order{
+    font-size: 16px;
+    font-family: 'microsoft yahei', Arial;
+}
