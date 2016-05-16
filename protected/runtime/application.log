@@ -14707,3 +14707,230 @@ Stack trace:
 REQUEST_URI=/timer/index.php/site/default/css/bootstrap.min.css
 HTTP_REFERER=http://127.0.0.1/timer/index.php/site/default/index
 ---
+2016/05/16 10:51:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT * FROM `needingGet` `t` WHERE username=:username.
+in C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php (22)
+in C:\wamp\www\timer_github\index.php (14)
+2016/05/16 10:51:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT * FROM `needingGet` `t` WHERE username=:username' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(22): CActiveRecord->findAll('username=:usern...', Array)
+#4 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#5 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#10 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/1
+HTTP_REFERER=http://127.0.0.1/timer_github/index.php/needing/default/index/id/14
+---
+2016/05/16 11:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/default/cs...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/timer_github/index.php/site/default/css/bootstrap.min.css
+HTTP_REFERER=http://127.0.0.1/timer_github/index.php/site/default/index
+---
+2016/05/16 13:25:17 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: select * from needingGet where username=:username.
+in C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php (25)
+in C:\wamp\www\timer_github\index.php (14)
+2016/05/16 13:25:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: select * from needingGet where username=:username' in C:\wamp\www\Yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(25): CDbCommand->queryRow(Array)
+#2 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#8 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/1
+HTTP_REFERER=http://127.0.0.1/timer_github/index.php/user/default/index/user/1
+---
+2016/05/16 16:49:25 [error] [php] Division by zero (C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php:205)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(869): DefaultController->renderFile()
+#1 C:\wamp\www\Yii\framework\web\CController.php(782): DefaultController->renderPartial()
+#2 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(33): DefaultController->render()
+#3 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#4 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\Yii\framework\web\CController.php(286): DefaultController->runAction()
+#6 C:\wamp\www\Yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\timer_github\index.php(14): CWebApplication->run()
+REQUEST_URI=/timer_github/index.php/user/default/index/user/1
+in C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php (205)
+in C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php (33)
+in C:\wamp\www\timer_github\index.php (14)
+2016/05/16 17:19:41 [error] [exception.CException] exception 'CException' with message '属性 "NeedingGet.subject" 未被定义.' in C:\wamp\www\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('subject')
+#1 C:\wamp\www\Yii\framework\base\CModel.php(596): CActiveRecord->__get('subject')
+#2 C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php(179): CModel->offsetGet('subject')
+#3 C:\wamp\www\Yii\framework\web\CBaseController.php(131): require('C:\wamp\www\tim...')
+#4 C:\wamp\www\Yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\tim...', Array, true)
+#5 C:\wamp\www\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tim...', Array, true)
+#6 C:\wamp\www\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(33): CController->render('index', Array)
+#8 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#14 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/1
+HTTP_REFERER=http://127.0.0.1/timer_github/index.php/user/default/index/user/1
+---
+2016/05/16 18:09:35 [error] [exception.CException] exception 'CException' with message '属性 "User.0" 未被定义.' in C:\wamp\www\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('0')
+#1 C:\wamp\www\Yii\framework\base\CModel.php(596): CActiveRecord->__get('0')
+#2 C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php(101): CModel->offsetGet(0)
+#3 C:\wamp\www\Yii\framework\web\CBaseController.php(131): require('C:\wamp\www\tim...')
+#4 C:\wamp\www\Yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\tim...', Array, true)
+#5 C:\wamp\www\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tim...', Array, true)
+#6 C:\wamp\www\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(44): CController->render('index', Array)
+#8 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#14 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/28
+---
+2016/05/16 18:10:42 [error] [exception.CException] exception 'CException' with message '属性 "User.0" 未被定义.' in C:\wamp\www\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('0')
+#1 C:\wamp\www\Yii\framework\base\CModel.php(596): CActiveRecord->__get('0')
+#2 C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php(101): CModel->offsetGet(0)
+#3 C:\wamp\www\Yii\framework\web\CBaseController.php(131): require('C:\wamp\www\tim...')
+#4 C:\wamp\www\Yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\tim...', Array, true)
+#5 C:\wamp\www\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tim...', Array, true)
+#6 C:\wamp\www\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(44): CController->render('index', Array)
+#8 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#14 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/28
+---
+2016/05/16 18:11:58 [error] [exception.CException] exception 'CException' with message '属性 "User.0" 未被定义.' in C:\wamp\www\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('0')
+#1 C:\wamp\www\Yii\framework\base\CModel.php(596): CActiveRecord->__get('0')
+#2 C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php(101): CModel->offsetGet(0)
+#3 C:\wamp\www\Yii\framework\web\CBaseController.php(131): require('C:\wamp\www\tim...')
+#4 C:\wamp\www\Yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\tim...', Array, true)
+#5 C:\wamp\www\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tim...', Array, true)
+#6 C:\wamp\www\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(44): CController->render('index', Array)
+#8 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#14 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/28
+---
+2016/05/16 18:16:53 [error] [exception.CException] exception 'CException' with message '属性 "User.0" 未被定义.' in C:\wamp\www\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('0')
+#1 C:\wamp\www\Yii\framework\base\CModel.php(596): CActiveRecord->__get('0')
+#2 C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php(101): CModel->offsetGet(0)
+#3 C:\wamp\www\Yii\framework\web\CBaseController.php(131): require('C:\wamp\www\tim...')
+#4 C:\wamp\www\Yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\tim...', Array, true)
+#5 C:\wamp\www\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tim...', Array, true)
+#6 C:\wamp\www\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(44): CController->render('index', Array)
+#8 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#14 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/28
+---
+2016/05/16 18:19:01 [error] [exception.CException] exception 'CException' with message '属性 "User.0" 未被定义.' in C:\wamp\www\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('0')
+#1 C:\wamp\www\Yii\framework\base\CModel.php(596): CActiveRecord->__get('0')
+#2 C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php(101): CModel->offsetGet(0)
+#3 C:\wamp\www\Yii\framework\web\CBaseController.php(131): require('C:\wamp\www\tim...')
+#4 C:\wamp\www\Yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\tim...', Array, true)
+#5 C:\wamp\www\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tim...', Array, true)
+#6 C:\wamp\www\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(44): CController->render('index', Array)
+#8 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#14 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/28
+---
+2016/05/16 18:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/default/cs...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/timer_github/index.php/site/default/css/bootstrap.min.css
+HTTP_REFERER=http://127.0.0.1/timer_github/index.php/site/default/index
+---
+2016/05/16 18:21:18 [error] [exception.CException] exception 'CException' with message '属性 "User.0" 未被定义.' in C:\wamp\www\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('0')
+#1 C:\wamp\www\Yii\framework\base\CModel.php(596): CActiveRecord->__get('0')
+#2 C:\wamp\www\timer_github\themes\myTheme\views\user\default\index.php(101): CModel->offsetGet(0)
+#3 C:\wamp\www\Yii\framework\web\CBaseController.php(131): require('C:\wamp\www\tim...')
+#4 C:\wamp\www\Yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\tim...', Array, true)
+#5 C:\wamp\www\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\tim...', Array, true)
+#6 C:\wamp\www\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\timer_github\protected\modules\user\controllers\DefaultController.php(44): CController->render('index', Array)
+#8 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/in...')
+#14 C:\wamp\www\Yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\wamp\www\timer_github\index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/timer_github/index.php/user/default/index/user/28
+---

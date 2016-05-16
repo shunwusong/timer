@@ -14,12 +14,12 @@
 //            return Yii::app()->getModule('user')->tableUsers;
             return 'user';
         }
-        public function rules(){
-            return array(
-                array('username,password','required','message'=>'check enter'),
-//                array('email','email','message'=>'enter correct mail type'),
-//                array('username','checkUsername'),
-//                array('verifyCode','captcha'),
-            );
-        }
+//        public function rules(){
+//            return array(
+//                array('username,password','required','message'=>'check enter'),
+////                array('email','email','message'=>'enter correct mail type'),
+////                array('username','checkUsername'),
+////                array('verifyCode','captcha'),
+//            );
+//        }
     }
